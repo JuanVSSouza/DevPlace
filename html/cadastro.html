@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   
+    <header class="cabecalho">
+        <nav>
+        <h1 class="cabecalho__titulo">DevPlace</h1>
+        </nav>
+    </header>
+
+    <main class="corpo">
+
+            <section class="corpo__cadastro">
+
+                <h2 class="corpo__cadastro__titulo ">Cadastrar-se</h2>
+                
+                    <form class="corpo__form-cadastro espacamento">
+                        <ul>
+                            <legend>PREENCHA AS LACUNAS</legend>
+                                <div class="corpo__form-item espacamento ">
+                                    <label for="nomeCad">Digite seu nome:</label>
+                                    <input type="text" id="nomeCad" required>
+                                </div>
+                                <div class="corpo__form-item espacamento ">
+                                    <label for="sobrenomeCad">Digite seu sobrenome:</label>
+                                    <input type="text" id="sobrenomeCad" required>
+                                </div>
+                                <div class="corpo__form-item espacamento ">
+                                    <label for="nascimentoCad">Selecione sua data de nascimento:</label>
+                                    <input type="date" id="nascimentoCad" required>
+                                </div>
+                                <div class="corpo__form-item espacamento ">
+                                    <label for="emailCad">Digite seu E-mail:</label>
+                                    <input type="email" id="emailCad" required>
+                                </div>
+                                <div class="corpo__form-item espacamento ">
+                                    <label for="senhaCad">Digite sua senha:</label>
+                                    <input type="password" id="senhaCad" maxlength="12" required>
+                                    <p class="corpo__form-item espacamento -aviso">*Máximo 12 caracteres*</p>
+                                </div>
+                                <div>
+                                    <label for="linguagem" class="espacamento">Liguagem dominante:</label>
+                                        <select id="linguagem" aria-required="true">
+                                            <option value=""></option>
+                                            <option value="javascript">Javascript</option>
+                                            <option value="java">Java</option>
+                                            <option value="python">Python</option>
+                                            <option value="kotlin">Kotlin</option>
+                                            <option value="c#">C#</option>
+                                            <option value="c">C</option>
+                                            <option value="c++">C++</option>
+                                            <option value="outro">Outro</option>
+                                        </select>
+                                </div>
+                                <div class="corpo__form-item espacamento">
+                                    <legend for="sexo">Sexo:</legend>
+                                        <div aria-required="true">
+                                        <input type="radio" name="sexo" id="masc" required>
+                                            <label for="masc">Masculino</label>
+                                        <input type="radio" name="sexo" id="femi" required>
+                                            <label for="femi">Feminino</label>
+                                        <input type="radio" name="sexo" id="naoBi" required>
+                                            <label for="naoBi">Não Binário</label>
+                                        </div>
+                                </div>
+
+                                <div class="espacamento">
+                                    <button class="corpo__form-botao espacamento">Cadastrar-se</button>
+                                </div>
+                        </ul>
+                    </form>
+            </section>
+            <section>
+                <p>Já tenho uma conta</p>
+                <a class="login__link" href="/html/index.html">LOGIN</a>
+            </section>
+    </main>
+
+    <footer class="rodape">
+        <h1 class="rodape__titulo">DevPlace</h1>
+        <p>Este site foi feito apenas com HTML e CSS, onde aproveito seus recursos dentro da ideia que tive para mais um projeto.<br>
+            Espero que o resultado tenha agradado visualmente e estruturalmente!
+        </p>
+        <p>Autor: Juan Souza</p>
+    </footer>
+</body>
+</html>
